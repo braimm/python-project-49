@@ -1,6 +1,5 @@
 import random
 import prompt
-from importlib import reload
 from brain_games import cli
 
 
@@ -26,6 +25,3 @@ def even_game():
             print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
-    
-
-even_game()
