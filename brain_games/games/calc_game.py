@@ -24,5 +24,6 @@ def calc_game():
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{result_operation}'.")
+            print(f"Let's try again, {name}!")
             return
     print(f"Congratulations, {name}!")
