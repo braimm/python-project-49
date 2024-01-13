@@ -12,4 +12,4 @@ https://asciinema.org/a/MC32IEHy3p4ypGU3iiNSMHEcV
 
 https://asciinema.org/a/IuPTNO1Gz0UYMhVrj9XqeDqHh
 
-<script async id="asciicast-n2GWObteF3LYQP97PfqoEqP9N" src="https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N.js"></script>
+<a href="https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N" target="_blank"><img src="https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N.svg" /></a>
