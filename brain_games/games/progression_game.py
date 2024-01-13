@@ -2,13 +2,9 @@ import random
 import prompt
 
 
-def progression_play():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    # name = cli.welcome_user()
+def play(value):
     print('What number is missing in the progression?')
-    for i in range(3):
+    for i in range(value):
         start_progression = random.randint(1, 10)
         length_progression = random.randint(5, 10)
         step_progression = random.randint(1, 5)
@@ -26,8 +22,5 @@ def progression_play():
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{invisible}'.")
-            print(f"Let's try again, {name}!")
-            return
-    print(f"Congratulations, {name}!")
-    
-# progression_game()
+            return False
+    return True

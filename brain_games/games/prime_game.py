@@ -12,13 +12,9 @@ def check_prime(number):
         return False
 
 
-def prime_play():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
-    # name = cli.welcome_user()
+def play(value):
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    for i in range(3):
+    for i in range(value):
         number = random.randint(1, 100)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
@@ -30,8 +26,5 @@ def prime_play():
                 print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
             else:
                 print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-            print(f"Let's try again, {name}!")
-            return
-    print(f"Congratulations, {name}!")
-
-# prime_game()
+            return False
+    return True

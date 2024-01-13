@@ -1,13 +1,10 @@
 import random
 import prompt
 
-def calc_play():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}')
+def play(value):    
     print('What is the result of the expression?')
     operaton_set = ['+', '-', '*']
-    for i in range(3):
+    for i in range(value):
         operation = random.choice(operaton_set)
         number_1 = random.randint(1, 10)
         number_2 = random.randint(1, 10)
@@ -24,6 +21,5 @@ def calc_play():
             print('Correct!')
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{result_operation}'.")
-            print(f"Let's try again, {name}!")
-            return
-    print(f"Congratulations, {name}!")
+            return False
+    return True
