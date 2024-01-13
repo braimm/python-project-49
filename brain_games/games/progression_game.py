@@ -2,7 +2,7 @@ import random
 import prompt
 
 
-def progression_game():
+def progression_play():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
@@ -30,4 +30,4 @@ def progression_game():
             return
     print(f"Congratulations, {name}!")
     
-progression_game()
+# progression_game()

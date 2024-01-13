@@ -12,7 +12,7 @@ def check_prime(number):
         return False
 
 
-def prime_game():
+def prime_play():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
@@ -34,4 +34,4 @@ def prime_game():
             return
     print(f"Congratulations, {name}!")
 
-prime_game()
+# prime_game()

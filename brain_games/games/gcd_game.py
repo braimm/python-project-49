@@ -1,14 +1,14 @@
 import random
 import prompt
 
-def gcd(num_1, num_2):
+def get_gcd(num_1, num_2):
     mod = num_1 % num_2
     if mod == 0:
         return num_2
     else:
-        return gcd(num_2, mod)
+        return get_gcd(num_2, mod)
 
-def gcd_game():
+def gcd_play():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
@@ -18,9 +18,9 @@ def gcd_game():
         number_1 = random.randint(1, 10)
         number_2 = random.randint(1, 10)
         if number_1 >= number_2:
-            result_gcd = gcd(number_1, number_2)
+            result_gcd = get_gcd(number_1, number_2)
         else:
-            result_gcd = gcd(number_2, number_1)
+            result_gcd = get_gcd(number_2, number_1)
         print(f'Question: {number_1} {number_2}')
         answer = prompt.integer('Your answer: ')
         if answer == result_gcd:
@@ -31,4 +31,4 @@ def gcd_game():
             return
     print(f"Congratulations, {name}!")
 
-gcd_game()
+# gcd_game()

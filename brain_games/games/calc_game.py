@@ -1,7 +1,7 @@
 import random
 import prompt
 
-def calc_game():
+def calc_play():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
