@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/braimm/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/braimm/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/1a07882a81ba9400bf61/maintainability)](https://codeclimate.com/github/braimm/python-project-49/maintainability)
 
-1. ##Step 5##. brain-even
+1. ## Step 5. brain-even
 <p>https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N</p>   
 
 2. **Step 6**. brain-calc
