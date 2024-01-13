@@ -3,8 +3,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1a07882a81ba9400bf61/maintainability)](https://codeclimate.com/github/braimm/python-project-49/maintainability)
 
 1. **Step 5**. brain-even
-https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N   
-[![asciicast](https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N.svg)](https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N)
+<p>https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N</p>   
+
 2. **Step 6**. brain-calc
 https://asciinema.org/a/bWExlSHWTW5q76Oku0YEWrLth
 
