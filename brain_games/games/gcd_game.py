@@ -1,12 +1,14 @@
 import random
 import prompt
 
+
 def get_gcd(num_1, num_2):
     mod = num_1 % num_2
     if mod == 0:
         return num_2
     else:
         return get_gcd(num_2, mod)
+
 
 def play(value):
     print('Find the greatest common divisor of given numbers.')
@@ -22,6 +24,7 @@ def play(value):
         if answer == result_gcd:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result_gcd}'.")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{result_gcd}'.")
             return False
     return True

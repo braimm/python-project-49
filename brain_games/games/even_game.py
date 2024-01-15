@@ -9,12 +9,14 @@ def play(value):
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
         mod = (number % 2)
-        if ((mod == 0) and (answer == 'yes')) or ((mod != 0) and (answer == 'no')):
+        if (mod == 0 and answer == 'yes') or (mod != 0 and answer == 'no'):
             print('Correct!')
         else:
             if mod == 0:
-                print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
+                print(f"'{answer}' is wrong answer ;(. "
+                      f"Correct answer was 'yes'.")
             else:
-                print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
+                print(f"'{answer}' is wrong answer ;(. "
+                      f"Correct answer was 'no'.")
             return False
     return True

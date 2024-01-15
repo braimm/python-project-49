@@ -1,9 +1,14 @@
 import random
 import prompt
 
+
 def check_prime(number):
     count_divider = 0
-    for i in range(2, (number//2)+1):
+    if number == 1:
+        return False
+    if number == 2:
+        return True
+    for i in range(2, (number // 2) + 1):
         if (number % i) == 0:
             count_divider += 1
     if count_divider == 0:
@@ -19,12 +24,15 @@ def play(value):
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
         status_number = check_prime(number)
-        if ((answer == 'yes') and (status_number == True)) or ((answer == 'no') and (status_number == False)):
+        if (((answer == 'yes') == status_number)
+                or ((answer == 'no') != status_number)):
             print('Correct!')
         else:
-            if status_number == True:
-                print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
+            if status_number:
+                print(f"'{answer}' is wrong answer ;(. "
+                      f"Correct answer was 'yes'.")
             else:
-                print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
+                print(f"'{answer}' is wrong answer ;(. "
+                      f"Correct answer was 'no'.")
             return False
     return True

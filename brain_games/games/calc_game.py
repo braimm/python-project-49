@@ -1,7 +1,8 @@
 import random
 import prompt
 
-def play(value):    
+
+def play(value):
     print('What is the result of the expression?')
     operaton_set = ['+', '-', '*']
     for i in range(value):
@@ -20,6 +21,7 @@ def play(value):
         if result_operation == answer:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result_operation}'.")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{result_operation}'.")
             return False
     return True

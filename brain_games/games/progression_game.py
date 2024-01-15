@@ -8,7 +8,7 @@ def play(value):
         start_progression = random.randint(1, 10)
         length_progression = random.randint(5, 10)
         step_progression = random.randint(1, 5)
-        position_invisible = random.randint(0, length_progression-1)
+        position_invisible = random.randint(0, length_progression - 1)
         progression = [start_progression]
         for i in range(length_progression):
             start_progression += step_progression
@@ -21,6 +21,7 @@ def play(value):
         if answer == invisible:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{invisible}'.")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{invisible}'.")
             return False
     return True
