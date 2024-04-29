@@ -5,6 +5,7 @@
 
 1. **Step 5**. brain-even: 
 https://asciinema.org/a/Lk4AzR9H32ejvsq2nNOfjh5ft
+[![asciicast](https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N.svg)](https://asciinema.org/a/n2GWObteF3LYQP97PfqoEqP9N)
     
 2. **Step 6**. brain-calc: 
 https://asciinema.org/a/DB5PK2dLAdxfnKfwO3nMlUOJ7
