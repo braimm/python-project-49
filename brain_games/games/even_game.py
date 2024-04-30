@@ -1,22 +1,14 @@
 import random
-import prompt
 
 
-def play(value):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    for i in range(value):
-        number = random.randint(1, 100)
-        print(f'Question: {number}')
-        answer = prompt.string('Your answer: ')
-        mod = (number % 2)
-        if (mod == 0 and answer == 'yes') or (mod != 0 and answer == 'no'):
-            print('Correct!')
-        else:
-            if mod == 0:
-                print(f"'{answer}' is wrong answer ;(. "
-                      f"Correct answer was 'yes'.")
-            else:
-                print(f"'{answer}' is wrong answer ;(. "
-                      f"Correct answer was 'no'.")
-            return False
-    return True
+TASK_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
+def play():
+    number = random.randint(1, 100)
+    mod = (number % 2)
+    if mod:
+        even = 'no'
+    else:
+        even = 'yes'
+    return number, even

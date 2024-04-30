@@ -1,5 +1,6 @@
 import random
-import prompt
+
+TASK_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def check_prime(number):
@@ -17,22 +18,10 @@ def check_prime(number):
         return False
 
 
-def play(value):
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    for i in range(value):
-        number = random.randint(1, 100)
-        print(f'Question: {number}')
-        answer = prompt.string('Your answer: ')
-        status_number = check_prime(number)
-        if (((answer == 'yes') == status_number)
-                or ((answer == 'no') != status_number)):
-            print('Correct!')
-        else:
-            if status_number:
-                print(f"'{answer}' is wrong answer ;(. "
-                      f"Correct answer was 'yes'.")
-            else:
-                print(f"'{answer}' is wrong answer ;(. "
-                      f"Correct answer was 'no'.")
-            return False
-    return True
+def play():
+    number = random.randint(1, 100)
+    if check_prime(number):
+        prime = 'yes'
+    else:
+        prime = 'no'
+    return number, prime
