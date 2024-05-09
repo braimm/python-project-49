@@ -1,4 +1,4 @@
-import random
+from brain_games.games.generator import get_number
 
 TASK_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
@@ -15,6 +15,6 @@ def check_prime(number):
 
 
 def play():
-    number = random.randint(1, 100)
+    number = get_number(1, 100)
     prime = 'yes' if check_prime(number) else 'no'
     return number, prime
